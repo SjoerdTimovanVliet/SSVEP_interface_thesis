@@ -55,12 +55,14 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
     conda install -c conda-forge opencv==4.6.0
     
     conda install -c conda-forge pingouin==0.5.2
-
-   ## Step 1: Processing with process_eeg _and_eye_tracking_v1.py
+    
+    conda install -c conda-forge gcc=12.1.0
+    
+   ## Step 1: Processing with process_eeg_and_eye_tracking_v1.py
    This has to be executed for each experiment for each participant seperately.
    
    1. In line 1216 the variable folder_path has to be changed to the path containing the eye-tracking and EEG data in combination with the EXPERIMENT_X.csv. The X is here either 1 or 2. 
-   Important: There is a difference between Linux and Windows in path which means one uses '/' and the other '\'. Thus, you might need to change that to get the code running in places where paths are created.
+   Important: There is a difference between Linux and Windows in path which means one uses '/' and the other '\'. Thus, you might need to change that to get the code running in places where paths are seperated and are created.
    
    2. Then run the file with python
 
