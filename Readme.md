@@ -54,8 +54,6 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
     
     conda install -c conda-forge opencv==4.6.0
     
-    conda install -c conda-forge pingouin==0.5.2
-    
     conda install -c conda-forge gcc=12.1.0
     
    ## Step 1: Processing with process_eeg_and_eye_tracking_v1.py
@@ -88,6 +86,8 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
     conda install -c conda-forge pandas==1.5.1
     
     conda install -c conda-forge opencv==4.6.0
+    
+    conda install -c conda-forge pingouin==0.5.2
     
    ## Step 3: Run process_SNR.py to combine all the data
    
