@@ -1,0 +1,71 @@
+,,Metrics,pp1,pp2,pp3,pp4,pp5,pp6,AVERAGE,STD
+Colors,Black/Red,Comfort,5,5,2,3,4,4,3.83,1.07
+,,Person's focus level,5,2,4,4,3,4,3.67,0.94
+,,Eye Irritation,2,1,4,3,2,2,2.33,0.94
+,,Focus level on stimulus center,5,3,2,4,4,4,3.67,0.94
+,,Had to blink a lot,2,3,5,4,2,4,3.33,1.11
+Colors,Black/Green,Comfort,4,1,2,5,2,2,2.67,1.37
+,,Person's focus level,4,2,3,4,2,2,2.83,0.9
+,,Eye Irritation,3,5,2,2,4,4,3.33,1.11
+,,Focus level on stimulus center,4,3,3,4,2,2,3,0.82
+,,Had to blink a lot,2,3,3,3,4,4,3.17,0.69
+Colors,Black/White,Comfort,2,3,5,2,4,2,3,1.15
+,,Person's focus level,3,3,3,3,4,4,3.33,0.47
+,,Eye Irritation,4,3,1,4,2,4,3,1.15
+,,Focus level on stimulus center,3,3,5,2,4,3,3.33,0.94
+,,Had to blink a lot,3,3,2,4,3,4,3.17,0.69
+Shapes,Triangle,Comfort,2,2,1,3,3,4,2.5,0.96
+,,Person's focus level,2,3,4,4,4,2,3.17,0.9
+,,Eye Irritation,4,3,4,3,3,2,3.17,0.69
+,,Focus level on stimulus center,2,3,2,2,3,4,2.67,0.75
+,,Had to blink a lot,4,3,4,2,2,4,3.17,0.9
+Shapes,Square,Comfort,5,4,3,3,4,4,3.83,0.69
+,,Person's focus level,4,3,4,2,4,2,3.17,0.9
+,,Eye Irritation,2,3,2,3,3,2,2.5,0.5
+,,Focus level on stimulus center,4,3,5,4,4,3,3.83,0.69
+,,Had to blink a lot,2,3,3,4,2,3,2.83,0.69
+Shapes,Circle,Comfort,5,4,5,4,4,4,4.33,0.47
+,,Person's focus level,4,2,4,4,4,2,3.33,0.94
+,,Eye Irritation,2,3,1,1,3,2,2,0.82
+,,Focus level on stimulus center,5,3,5,5,4,2,4,1.15
+,,Had to blink a lot,2,3,1,2,3,3,2.33,0.75
+Frequency,High frequency,Comfort,5,4,1.5,1,2,2,2.58,1.43
+,,Person's focus level,5,4,1.5,1,3,2,2.75,1.41
+,,Eye Irritation,1,2,4,4,4,4,3.17,1.21
+,,Focus level on stimulus center,5,3,3.5,2,3,2,3.08,1.02
+,,Had to blink a lot,1,3,4.5,3,4,5,3.42,1.3
+Frequency,Middle Frequency,Comfort,2,2,3.5,5,3,2,2.92,1.1
+,,Person's focus level,2,2,2.5,4,4,2,2.75,0.9
+,,Eye Irritation,4,4,2.5,2,2,4,3.08,0.93
+,,Focus level on stimulus center,2,2,2.5,4,4,2,2.75,0.9
+,,Had to blink a lot,3,3,2.5,3,3,4,3.08,0.45
+Frequency,Low Frequency,Comfort,4,4,3,5,4,4,4,0.58
+,,Person's focus level,4,2,2.5,3,4,4,3.25,0.8
+,,Eye Irritation,1,2,1,2,2,2,1.67,0.47
+,,Focus level on stimulus center,4,3,1.5,5,4,4,3.58,1.1
+,,Had to blink a lot,2,3,3,3,2,2,2.5,0.5
+Size stimulus,Small size,Comfort,5,3,2,2,4,4,3.33,1.11
+,,Person's focus level,5,2,2,4,4,4,3.5,1.12
+,,Eye Irritation,1,3,2,4,2,2,2.33,0.94
+,,Focus level on stimulus center,5,3,1,2,3,4,3,1.29
+,,Had to blink a lot,1,3,2,4,3,2,2.5,0.96
+Size stimulus,Medium size,Comfort,4,3,3,3,4,3,3.33,0.47
+,,Person's focus level,4,2,3,4,3,3,3.17,0.69
+,,Eye Irritation,2,3,2,2,3,2,2.33,0.47
+,,Focus level on stimulus center,4,3,3,4,4,4,3.67,0.47
+,,Had to blink a lot,2,3,2,3,3,3,2.67,0.47
+Size stimulus,Large Size,Comfort,2,3,4,5,2,2,3,1.15
+,,Person's focus level,2,3,4,3,2,2,2.67,0.75
+,,Eye Irritation,4,3,2,2,4,4,3.17,0.9
+,,Focus level on stimulus center,1,2,4,5,3,2,2.83,1.34
+,,Had to blink a lot,4,3,2,2,4,4,3.17,0.9
+Stimulus mode,Single stimulus,Comfort,2,4,1,5,3,4,3.17,1.34
+,,Person's focus level,3,3,2,4,4,2,3,0.82
+,,Eye Irritation,4,2,4,2,2,2,2.67,0.94
+,,Focus level on stimulus center,3,2,4,4,4,2,3.17,0.9
+,,Had to blink a lot,3,3,4,2,2,3,2.83,0.69
+Stimulus mode,Multiple stimuli,Comfort,4,2,4,3,2,1,2.67,1.11
+,,Person's focus level,2,2,5,5,2,2,3,1.41
+,,Eye Irritation,2,3,3,4,4,4,3.33,0.75
+,,Focus level on stimulus center,2,3,2,3,1,2,2.17,0.69
+,,Had to blink a lot,2,3,5,4,4,4,3.67,0.94
