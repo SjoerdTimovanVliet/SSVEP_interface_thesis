@@ -40,7 +40,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
   
   Now you can run ssvep_interface_video_creater_v1.py
   
-  ## Setting up environment for the analyses scripts
+  ## Setting up environment for the first analyses scripts
   Unfortunately the packages used for creating the videos collide with the packages required for the analyses
   Let's create a new environment for these scripts
   
@@ -74,9 +74,21 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    1. Rename the processed_data.csv to processed_data_exp_X_ppX.csv, such as processed_data_exp_1_pp2.csv.  This means experiment 1 participant 2. 
    2. Place it in the folder within Data_SNR that is either called Experiment_1 or Experiment_2.
    3. Do this for all the participants for both experiments.
-   4. 
+  
    See the photo as example.
    
+   ### Step 3: Create environment for the rest next analyses. One of the necessary python libraries: pinguoin conflicts with the previous envirnoment and makes the previous script not executable anymore due to dependencies conflicts.
+   
+    conda create -n  analyis_snr python==3.9.0
+  
+    conda activate analyis_snr
+  
+    pip install mne==1.2.3
+    
+    conda install -c conda-forge pandas==1.5.1
+    
+    conda install -c conda-forge opencv==4.6.0
+    
    ## Step 3: Run process_SNR.py to combine all the data
    
    1. On line 48, change the path to the Data_SNR path containg all the '.csv' files.
