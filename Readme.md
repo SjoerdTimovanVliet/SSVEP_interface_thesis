@@ -20,7 +20,7 @@ To do this the trials can be cut between messages: "Frame to be displayed" to "T
 
 Executed on Ubuntu 20.04.4 LTS
 
-## x264 library to create videos in .avci forma
+## x264 library to create videos in .avci format
 
     sudo apt-get update -y
     sudo apt-get apt-get remove -y x264 ffmpeg libx264-dev
