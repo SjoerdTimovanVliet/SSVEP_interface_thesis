@@ -20,7 +20,7 @@ To do this the trials can be cut between messages: "Frame to be displayed" to "T
 
 Executed on Ubuntu 20.04.4 LTS
 
-## x264 library to create videos in .avci format
+## Step 1: install x264 library to create videos in .avci format
 
     sudo apt-get update -y
     sudo apt-get apt-get remove -y x264 ffmpeg libx264-dev
@@ -29,7 +29,7 @@ Executed on Ubuntu 20.04.4 LTS
 
 I read this tutorial to find the correct commands: https://www.swiftlane.com/blog/generating-mp4s-using-opencv-python-with-the-avc1-codec/
 
- ## Setting up the environment 
+ ## Step 2: Setting up the environment 
  
     conda create -n video_creater python==3.9.0
 
@@ -37,11 +37,11 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
 
     conda install -c conda-forge opencv==4.6.0
   
-  ## How the videos and photos of the trials are created 
+  ## Step 3: How the videos and photos of the trials are created 
   
   Now you can run ssvep_interface_video_creater_v1.py
   
-  ## Setting up environment for the first 2 analysis scripts
+  ## Step 4: Setting up environment for the first 2 analysis scripts
   Unfortunately the packages used for creating the videos collide with the packages required for the following statistical analyses
   Let's create a new environment for the next script
   
@@ -56,7 +56,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
     conda install -c conda-forge opencv==4.6.0
     
     
-   ## Step 1: Processing with process_eeg_and_eye_tracking_v1.py
+   ## Step 5: Processing with process_eeg_and_eye_tracking_v1.py
    This has to be executed for each experiment for each participant seperately.
    ![instruction_2](https://user-images.githubusercontent.com/27996213/213590999-fce106d1-fe70-4bf0-97df-f9254cb803c3.png)
 
@@ -70,7 +70,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
 
    4. This outputs Experiment_XXX_eye_tracking_processed_fixations.csv which contains the fixations. XXX is either 1X1 or 2X2 depending on the experiment. It also output the figures folder with visualizations (power-spectral density plots) of the raw eeg data of each trial. In the Experiment_XXX_eye_tracking folder there is an images folder that contains visualizations of the raw eye tracking data. It also contains a dropped_frames.png which shows the dropped frames per trial, and a heatmap that shows all the data across the trials as a heatmap. Lastly, it contains the processed_data.csv. This file contains all the metrics per trial such as max_snr, radius to center of stimulus, eye-tracking samples on target, etc. 
     
-   ## Step 2: Prepare data for SNR extraction by renaming the processed_data.csv within each folder containing participant data
+   ## Step 6: Prepare data for SNR extraction by renaming the processed_data.csv within each folder containing participant data
    The data is located in each ppX folder. Each of those folders has either Experiment 1 or Experiment 2. After the last step there should be folders like Experiment_XXX_eye_tracking. In there is an images folder that contains the desired file.
    ![Instruction_data_snr](https://user-images.githubusercontent.com/27996213/213533984-aa621efe-9ee0-4c3c-b5fb-022bc985a41f.png)
 
@@ -79,7 +79,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    3. Do this for all the participants for both experiments. See the photo as example.
    
     
-   ## Step 3: Run process_SNR.py to combine all the data
+   ## Step 7: Run process_SNR.py to combine all the data
    Make sure that the Data_SNR folder is empty except for the folders Experiment_1 and Experiment_2.
    1. On line 46, change the path to the Data_SNR path containg all the '.csv' files.
    2. Run the script with: python process_SNR.py
@@ -88,7 +88,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    
    
    
-   ## Step 4: Create environment for the rest of the analyses
+   ## Step 8: Create environment for the rest of the analyses
    One of the necessary python libraries: pinguoin conflicts with the previous envirnoment and makes the previous scripts not executable anymore due to dependencies conflicts. Additionally, it uses a different version of matplotlib.
    
     conda create -n  analysis_snr python==3.9.0
@@ -105,7 +105,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
     
     conda install matplotlib
     
-   ## Step 5: Run analyses scripts for the SNR
+   ## Step 9: Run analyses scripts for the SNR
    The scripts here save everything in the SNR results
    This performs statistical analysis of the SNR and plot some boxplots and means andstandard deviations:
    1. In SNR_statistic_analyses_v1.py change line 384 by updating its path to the file: SNR_sorted_by_participant.csv.
@@ -120,7 +120,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    
    It creates boxplots and shows the interaction between multiple variables with respect to the SNR
    
-   ## Step 6: Questionnaire analysis
+   ## Step 10: Questionnaire analysis
    1. In analysis_of_questionnaire_v1.py update the path on line 136
    2. Run the script
    
