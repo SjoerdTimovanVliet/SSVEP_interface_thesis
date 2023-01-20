@@ -81,7 +81,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
     
    ## Step 3: Run process_SNR.py to combine all the data
    
-   1. On line 48, change the path to the Data_SNR path containg all the '.csv' files.
+   1. On line 46, change the path to the Data_SNR path containg all the '.csv' files.
    2. Run the script with: python process_SNR.py
    
    It outputs a file named SNR_sorted_by_participant.csv located in the Data_SNR folder
