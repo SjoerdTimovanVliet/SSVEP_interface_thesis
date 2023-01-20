@@ -67,6 +67,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    Important: There is a difference between Linux and Windows in path which means one uses '/' and the other '\'. Thus, you might need to change that to get the code running in places where paths are seperated and are created.
    
    2. Change the channels to the desired ones in line 213 (this differs per participant, see report).
+        Except for participant 5 (only O1), the electrodes O1 and O2 are used.
    
    3. Then run the file with python
 
