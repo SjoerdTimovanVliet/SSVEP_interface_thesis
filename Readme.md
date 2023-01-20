@@ -55,7 +55,6 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
     
     conda install -c conda-forge opencv==4.6.0
     
-    conda install -c conda-forge gcc=12.1.0
     
    ## Step 1: Processing with process_eeg_and_eye_tracking_v1.py
    This has to be executed for each experiment for each participant seperately.
@@ -69,7 +68,8 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
 
    3. This outputs Experiment_XXX_eye_tracking_processed_fixations.csv which contains the fixations. XXX is either 1X1 or 2X2 depending on the experiment. It also output the figures folder with visualizations (power-spectral density plots) of the raw eeg data of each trial. In the Experiment_XXX_eye_tracking folder there is an images folder that contains visualizations of the raw eye tracking data. It also contains a dropped_frames.png which shows the dropped frames per trial, and a heatmap that shows all the data across the trials as a heatmap. Lastly, it contains the processed_data.csv. This file contains all the metrics per trial such as max_snr, radius to center of stimulus, eye-tracking samples on target, etc. 
     
-   ## Step 2: Prepare data for SNR extraction by renaming the processed_data.csv in 
+   ## Step 2: Prepare data for SNR extraction by renaming the processed_data.csv within each folder containing participant data
+   The data is located in each ppX folder. Each of those folders has either Experiment 1 or Experiment 2. After the last step there should be folders like Experiment_XXX_eye_tracking. In there is an images folder that contains the desired file.
    ![Instruction_data_snr](https://user-images.githubusercontent.com/27996213/213533984-aa621efe-9ee0-4c3c-b5fb-022bc985a41f.png)
 
    1. Rename the processed_data.csv to processed_data_exp_X_ppX.csv, such as processed_data_exp_1_pp2.csv.  This means experiment 1 participant 2.
