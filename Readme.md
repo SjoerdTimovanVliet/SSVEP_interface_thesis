@@ -64,9 +64,11 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
  
    Important: There is a difference between Linux and Windows in path which means one uses '/' and the other '\'. Thus, you might need to change that to get the code running in places where paths are seperated and are created.
    
-   2. Then run the file with python
+   2. Change the channels to the desired ones in line 213 (this differs per participant, see report).
+   
+   3. Then run the file with python
 
-   3. This outputs Experiment_XXX_eye_tracking_processed_fixations.csv which contains the fixations. XXX is either 1X1 or 2X2 depending on the experiment. It also output the figures folder with visualizations (power-spectral density plots) of the raw eeg data of each trial. In the Experiment_XXX_eye_tracking folder there is an images folder that contains visualizations of the raw eye tracking data. It also contains a dropped_frames.png which shows the dropped frames per trial, and a heatmap that shows all the data across the trials as a heatmap. Lastly, it contains the processed_data.csv. This file contains all the metrics per trial such as max_snr, radius to center of stimulus, eye-tracking samples on target, etc. 
+   4. This outputs Experiment_XXX_eye_tracking_processed_fixations.csv which contains the fixations. XXX is either 1X1 or 2X2 depending on the experiment. It also output the figures folder with visualizations (power-spectral density plots) of the raw eeg data of each trial. In the Experiment_XXX_eye_tracking folder there is an images folder that contains visualizations of the raw eye tracking data. It also contains a dropped_frames.png which shows the dropped frames per trial, and a heatmap that shows all the data across the trials as a heatmap. Lastly, it contains the processed_data.csv. This file contains all the metrics per trial such as max_snr, radius to center of stimulus, eye-tracking samples on target, etc. 
     
    ## Step 2: Prepare data for SNR extraction by renaming the processed_data.csv within each folder containing participant data
    The data is located in each ppX folder. Each of those folders has either Experiment 1 or Experiment 2. After the last step there should be folders like Experiment_XXX_eye_tracking. In there is an images folder that contains the desired file.
