@@ -1,0 +1,5 @@
+,8,13,19,25
+8,X,Not significant,Not significant,Significant
+13,Not significant,X,Significant,Significant
+19,Not significant,Significant,X,Not significant
+25,Significant,Significant,Not significant,X

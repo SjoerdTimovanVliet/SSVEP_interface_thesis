@@ -504,7 +504,7 @@ def create_boxplot(dict_of_combinations_with_data: dict,  groups_per_experiment_
 
                     # create the boxplot
                     bplot = ax.boxplot(data, positions=[x_value_index], widths=0.6, showmeans=True, meanline=True,
-                                       showfliers=False, patch_artist=True, medianprops=dict(color='blue'), meanprops=dict(color='red'))
+                                       showfliers=False, patch_artist=True, medianprops=dict(color='blue'), meanprops=dict(color='red'), zorder=1)
                     # set the color of the boxplot to be filled the color light blue
                     for patch in bplot['boxes']:
                         patch.set_facecolor('lightblue')
@@ -547,7 +547,7 @@ def create_boxplot(dict_of_combinations_with_data: dict,  groups_per_experiment_
 
                         # show the lines of the mean of each participant in the boxplot within each box with an alpha of 0.5 at the correct position with respect to the x axis
                         ax.plot([x_value_index-0.5 + i*stepsize, x_value_index - 0.4 + i*stepsize], [
-                                participant_mean, participant_mean], color=colors[i], lw=3)
+                                participant_mean, participant_mean], color=colors[i], lw=3, zorder=2)
 
                     # set the x axis ticks
                     ax.set_ylabel('SNR [dB]')

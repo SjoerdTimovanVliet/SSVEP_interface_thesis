@@ -1,0 +1,4 @@
+,10000,20000,30000
+10000,X,Significant,Significant
+20000,Significant,X,Not significant
+30000,Significant,Not significant,X

@@ -1,0 +1,19 @@
+category,groups,p_value_bartlett,Variances equal?,ANOVA method,df within groups,df between groups,p_value ANOVA method,Mean different?,Type of post hoc test,p_value_matrix,Significance_matrix
+pixel_surface,[10000 20000 30000],1.937900488999771e-12,No,Welch's ANOVA,2,1275.17,0.00026044180263274383,Yes,Games-Howell,"          10000     20000     30000
+10000       NaN  0.036528  0.000248
+20000  0.036528       NaN  0.498897
+30000  0.000248  0.498897       NaN","             10000            20000            30000
+10000            X      Significant      Significant
+20000  Significant                X  Not significant
+30000  Significant  Not significant                X"
+color,['green' 'red' 'white'],0.05252020083076799,Yes,One-way ANOVA,2,1941.0,0.13132294881435885,No,None,None,None
+shape,['circles' 'squares' 'triangles'],1.7042479840394272e-09,No,Welch's ANOVA,2,1283.12,0.05464870260330581,No,None,None,None
+frequency,[ 8 13 19 25],7.464196653543196e-21,No,Welch's ANOVA,3,1060.81,4.5710938984540495e-07,Yes,Games-Howell,"          8         13        19        25
+8        NaN  0.913413  0.216444  0.000306
+13  0.913413       NaN  0.014639  0.000001
+19  0.216444  0.014639       NaN  0.089892
+25  0.000306  0.000001  0.089892       NaN","                 8                13               19               25
+8                 X  Not significant  Not significant      Significant
+13  Not significant                X      Significant      Significant
+19  Not significant      Significant                X  Not significant
+25      Significant      Significant  Not significant                X"

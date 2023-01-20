@@ -1,0 +1,26 @@
+category,groups, metric,p_value_bartlett,Variances equal?,ANOVA method,df within groups,df between groups,p_value ANOVA method,Mean different?,Type of post hoc test,p_value_matrix,Significance_matrix
+Colors,['Black/Red' 'Black/Green' 'Black/White'],Comfort,0.9529288830363994,Yes,One-way ANOVA,2,15,0.05748733988796264,No,None,None,None
+Colors,['Black/Red' 'Black/Green' 'Black/White'],Person's focus level,1.0,Yes,One-way ANOVA,2,15,0.0634225469306117,No,None,None,None
+Colors,['Black/Red' 'Black/Green' 'Black/White'],Eye Irritation,0.9230084086867992,Yes,One-way ANOVA,2,15,0.1239536469204574,No,None,None,None
+Colors,['Black/Red' 'Black/Green' 'Black/White'],Focus level on stimulus center,0.7182036817956338,Yes,One-way ANOVA,2,15,0.4008477369778099,No,None,None,None
+Colors,['Black/Red' 'Black/Green' 'Black/White'],Had to blink a lot,0.6623231398891916,Yes,One-way ANOVA,2,15,0.6393007262385848,No,None,None,None
+Frequency,['High frequency' 'Middle Frequency' 'Low Frequency'],Comfort,0.9529288830363994,Yes,One-way ANOVA,2,15,0.05748733988796264,No,None,None,None
+Frequency,['High frequency' 'Middle Frequency' 'Low Frequency'],Person's focus level,1.0,Yes,One-way ANOVA,2,15,0.0634225469306117,No,None,None,None
+Frequency,['High frequency' 'Middle Frequency' 'Low Frequency'],Eye Irritation,0.9230084086867992,Yes,One-way ANOVA,2,15,0.1239536469204574,No,None,None,None
+Frequency,['High frequency' 'Middle Frequency' 'Low Frequency'],Focus level on stimulus center,0.7182036817956338,Yes,One-way ANOVA,2,15,0.4008477369778099,No,None,None,None
+Frequency,['High frequency' 'Middle Frequency' 'Low Frequency'],Had to blink a lot,0.6623231398891916,Yes,One-way ANOVA,2,15,0.6393007262385848,No,None,None,None
+Shapes,['Triangle' 'Square' 'Circle'],Comfort,0.9529288830363994,Yes,One-way ANOVA,2,15,0.05748733988796264,No,None,None,None
+Shapes,['Triangle' 'Square' 'Circle'],Person's focus level,1.0,Yes,One-way ANOVA,2,15,0.0634225469306117,No,None,None,None
+Shapes,['Triangle' 'Square' 'Circle'],Eye Irritation,0.9230084086867992,Yes,One-way ANOVA,2,15,0.1239536469204574,No,None,None,None
+Shapes,['Triangle' 'Square' 'Circle'],Focus level on stimulus center,0.7182036817956338,Yes,One-way ANOVA,2,15,0.4008477369778099,No,None,None,None
+Shapes,['Triangle' 'Square' 'Circle'],Had to blink a lot,0.6623231398891916,Yes,One-way ANOVA,2,15,0.6393007262385848,No,None,None,None
+Size stimulus,['Small size' 'Medium size' 'Large Size'],Comfort,0.9529288830363994,Yes,One-way ANOVA,2,15,0.05748733988796264,No,None,None,None
+Size stimulus,['Small size' 'Medium size' 'Large Size'],Person's focus level,1.0,Yes,One-way ANOVA,2,15,0.0634225469306117,No,None,None,None
+Size stimulus,['Small size' 'Medium size' 'Large Size'],Eye Irritation,0.9230084086867992,Yes,One-way ANOVA,2,15,0.1239536469204574,No,None,None,None
+Size stimulus,['Small size' 'Medium size' 'Large Size'],Focus level on stimulus center,0.7182036817956338,Yes,One-way ANOVA,2,15,0.4008477369778099,No,None,None,None
+Size stimulus,['Small size' 'Medium size' 'Large Size'],Had to blink a lot,0.6623231398891916,Yes,One-way ANOVA,2,15,0.6393007262385848,No,None,None,None
+Stimulus mode,['Single stimulus' 'Multiple stimuli'],Comfort,0.6623231398891916,Yes,One-way ANOVA,1,10,0.6393007262385848,No,None,None,None
+Stimulus mode,['Single stimulus' 'Multiple stimuli'],Person's focus level,0.6623231398891916,Yes,One-way ANOVA,1,10,0.6393007262385848,No,None,None,None
+Stimulus mode,['Single stimulus' 'Multiple stimuli'],Eye Irritation,0.6623231398891916,Yes,One-way ANOVA,1,10,0.6393007262385848,No,None,None,None
+Stimulus mode,['Single stimulus' 'Multiple stimuli'],Focus level on stimulus center,0.6623231398891916,Yes,One-way ANOVA,1,10,0.6393007262385848,No,None,None,None
+Stimulus mode,['Single stimulus' 'Multiple stimuli'],Had to blink a lot,0.6623231398891916,Yes,One-way ANOVA,1,10,0.6393007262385848,No,None,None,None

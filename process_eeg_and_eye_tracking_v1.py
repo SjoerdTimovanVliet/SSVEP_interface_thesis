@@ -1212,20 +1212,20 @@ def load_csv_data_utf8(path: str) -> pd.DataFrame:
 
 def main():
     # Load the eye tracking data
-    folder_path = r'C/media/sjoerd/BackUp Drive/Thesis_project/participant data/raw data/pp1/Experiment 1'
+    folder_path = r'/media/sjoerd/BackUp Drive/Thesis_project/participant data/raw data/pp1/Experiment 1'
 
     if 'Experiment 2' in folder_path:
-        path_eye_tracking = folder_path + '\Experiment_2x2_eye_tracking.csv'
-        path_trial_sequence = folder_path + '\EXPERIMENT_2X2.csv'
+        path_eye_tracking = folder_path + '/Experiment_2x2_eye_tracking.csv'
+        path_trial_sequence = folder_path + '/EXPERIMENT_2X2.csv'
     elif 'Experiment 1' in folder_path:
-        path_eye_tracking = folder_path + '\Experiment_1x1_eye_tracking.csv'
-        path_trial_sequence = folder_path + '\EXPERIMENT_1X1.csv'
+        path_eye_tracking = folder_path + '/Experiment_1x1_eye_tracking.csv'
+        path_trial_sequence = folder_path + '/EXPERIMENT_1X1.csv'
     else:
         print("Please select the correct folder")
         return
 
     # create folder for images
-    path_img_folder = path_eye_tracking.split('.csv')[0]+'\images'
+    path_img_folder = path_eye_tracking.split('.csv')[0]+'/images'
     print(f" The folder to save the images to is {path_img_folder}")
 
     # create folder for images

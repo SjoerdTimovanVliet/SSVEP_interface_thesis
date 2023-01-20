@@ -1,0 +1,11 @@
+category,groups,p_value_bartlett,Variances equal?,ANOVA method,df within groups,df between groups,p_value ANOVA method,Mean different?,Type of post hoc test,p_value_matrix,Significance_matrix
+frequency,8,0.12875324026859572,Yes,One-way ANOVA,1,1132.0,0.7092982921034308,No,None,None,None
+frequency,25,0.7864723984739193,Yes,One-way ANOVA,1,1132.0,0.12356585682301108,No,None,None,None
+frequency,19,0.33615292683191345,Yes,One-way ANOVA,1,1132.0,0.9045718757708598,No,None,None,None
+frequency,13,0.046343384155093766,No,Welch's ANOVA,1,994.88,0.2763870061757801,No,None,None,None
+color,red,0.3827150775930799,Yes,One-way ANOVA,1,1510.0,0.749459670345173,No,None,None,None
+color,green,0.545424872649017,Yes,One-way ANOVA,1,1510.0,0.3886616352558835,No,None,None,None
+color,white,0.10737698501103139,Yes,One-way ANOVA,1,1510.0,0.4388953371147609,No,None,None,None
+pixel_surface,10000,0.6141591108251347,Yes,One-way ANOVA,1,1510.0,0.5166683723188605,No,None,None,None
+pixel_surface,30000,0.020060410622890677,No,Welch's ANOVA,1,1450.25,0.692471973982157,No,None,None,None
+pixel_surface,20000,6.877760552861187e-07,No,Welch's ANOVA,1,1244.23,0.3533838856754008,No,None,None,None

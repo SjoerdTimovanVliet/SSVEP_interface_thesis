@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import glob
-
+import sys
 
 def filter_dataframe_exp(df_pp: pd.DataFrame, df_snr: pd.DataFrame) -> pd.DataFrame:
     """
@@ -43,7 +43,7 @@ def filter_dataframe_exp(df_pp: pd.DataFrame, df_snr: pd.DataFrame) -> pd.DataFr
 
 # main folder path
 print("main folder path")
-path = r"C:\Users\sjoer\OneDrive\TU Delft\Robotics\2nd year\Q2 Thesis\Data Analysis\python\Data_SNR"
+path = r"/media/sjoerd/BackUp Drive/Thesis_project/Data_SNR"
 # find child folders
 folders = glob.glob(path + "/*")
 print(f" folders: {folders}")
@@ -63,6 +63,8 @@ headers_dataframe = ['Folder', 'File', 'pp', 'Video', 'pixel_surface', 'color', 
 df_snr = pd.DataFrame(columns=headers_dataframe)
 
 for folder in files:
+    print(f"folder: {folder}")
+    print(f"files: {files[folder]}")
     # create a dictionary for the folder
     files_data[folder] = {}
     for file in files[folder]:
