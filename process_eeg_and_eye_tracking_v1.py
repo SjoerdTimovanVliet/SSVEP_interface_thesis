@@ -209,10 +209,10 @@ def load_and_setup_eeg_data(eeg_path: str, vhdr_path: str, vmrk_path: str, txt_p
     sfreq = raw.info['sfreq']
     # get the channel names
     ch_names = raw.info['ch_names']
-
-    channels_to_safe = ['O1', 'O2']
+    # save only the O1 and O2 channels except O1 only for participant 5
+    channels_to_save = ['O1', 'O2']
     # drop all channels except O1, 02
-    channels_to_drop = [ch for ch in ch_names if ch not in channels_to_safe]
+    channels_to_drop = [ch for ch in ch_names if ch not in channels_to_save]
 
     # get the index of the channels to drop
     channels_to_drop_idx = [ch_names.index(ch) for ch in channels_to_drop]
@@ -473,7 +473,7 @@ def process_eye_tracking_data(eye_tracking_path: str):
         trial_data.append(data_per_trial)
     try:
         t, xf, yf, pf, fixations, saccades, fd, sl, ff, sf, sa, fa = process_eyes(
-        trial_data)
+            trial_data)
     except:
         print('Error processing eye tracking data')
         t, xf, yf, pf, fixations, saccades, fd, sl, ff, sf, sa, fa = np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan
@@ -1212,7 +1212,7 @@ def load_csv_data_utf8(path: str) -> pd.DataFrame:
 
 def main():
     # Load the eye tracking data
-    folder_path = r'/media/sjoerd/BackUp Drive/Thesis_project/participant data/raw data/pp1/Experiment 1'
+    folder_path = r'/media/sjoerd/BackUp Drive/Thesis_project/participant data/raw data/pp5/Experiment 1'
 
     if 'Experiment 2' in folder_path:
         path_eye_tracking = folder_path + '/Experiment_2x2_eye_tracking.csv'

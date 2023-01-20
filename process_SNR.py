@@ -3,6 +3,7 @@ import pandas as pd
 import glob
 import sys
 
+
 def filter_dataframe_exp(df_pp: pd.DataFrame, df_snr: pd.DataFrame) -> pd.DataFrame:
     """
     Filter the dataframe per participant and per video and put it in another format for the analysis
@@ -16,11 +17,13 @@ def filter_dataframe_exp(df_pp: pd.DataFrame, df_snr: pd.DataFrame) -> pd.DataFr
     # loop over the files
     for folder in df_snr['Folder'].unique():
         # extract unique video names of the folder
-        unique_video_names = df_snr[df_snr['Folder'] == folder]['Video'].unique()
+        unique_video_names = df_snr[df_snr['Folder']
+                                    == folder]['Video'].unique()
         # loop over the unique video names and extract the data
         for video in unique_video_names:
             # extract the data for the video
-            video_data = df_snr[(df_snr['Folder'] == folder) & (df_snr['Video'] == video)]
+            video_data = df_snr[(df_snr['Folder'] == folder)
+                                & (df_snr['Video'] == video)]
             # extract the settings of the video such as pixel surface, color, shape, frequency
             pixel_surface = video_data['pixel_surface'].unique()[0]
             color = video_data['color'].unique()[0]
@@ -38,8 +41,9 @@ def filter_dataframe_exp(df_pp: pd.DataFrame, df_snr: pd.DataFrame) -> pd.DataFr
 
             # append the row to the dataframe
             df_pp.loc[len(df_pp)] = row
-            
+
     return df_pp
+
 
 # main folder path
 print("main folder path")
@@ -58,7 +62,8 @@ for folder in folders:
 # create a dictionary to store the data
 files_data = {}
 # create a dataframe to store the data
-headers_dataframe = ['Folder', 'File', 'pp', 'Video', 'pixel_surface', 'color', 'shape', 'frequency', 'MAX_SNR']
+headers_dataframe = ['Folder', 'File', 'pp', 'Video',
+                     'pixel_surface', 'color', 'shape', 'frequency', 'MAX_SNR']
 # create empty dataframe
 df_snr = pd.DataFrame(columns=headers_dataframe)
 
@@ -81,9 +86,9 @@ for folder in files:
         # remove the first 4 trials
         data = data[4:]
         if 'Experiment_1' == folder:
-            assert(len(data['TRIAL_INDEX']) == 324)
+            assert (len(data['TRIAL_INDEX']) == 324)
         elif 'Experiment_2' == folder:
-            assert(len(data['TRIAL_INDEX']) == 432)
+            assert (len(data['TRIAL_INDEX']) == 432)
         else:
             print(f"Error: folder {folder} not recognized")
             sys.exit()
@@ -100,9 +105,10 @@ for folder in files:
             unique_video_names_experiment_1 = unique_video_names
         elif 'Experiment_2' == folder:
             unique_video_names_experiment_2 = unique_video_names
-            
-        #pdb.set_trace()
-        files_data[folder][file_name]['unique_video_names'] = np.array(unique_video_names)
+
+        # pdb.set_trace()
+        files_data[folder][file_name]['unique_video_names'] = np.array(
+            unique_video_names)
         # extract for each video_name the data
         for video in unique_video_names:
             # get the data for the video
@@ -116,21 +122,24 @@ for folder in files:
             pixel_surface = int(video_data['PIXEL_SURFACE'].unique()[0])
             color = video_data['COLOR'].unique()[0]
             shape = video_data['SHAPE'].unique()[0]
-            frequency = int(video_data['FREQUENCY'].unique()[0])         
+            frequency = int(video_data['FREQUENCY'].unique()[0])
             # extract the pp number from the file name
-            pp_number = int(file_name.split("_")[-1].split(".")[0].replace("pp", ""))
+            pp_number = int(file_name.split(
+                "_")[-1].split(".")[0].replace("pp", ""))
             # create the row for the dataframe
-            row_dataframe = [folder, file_name, pp_number, video, pixel_surface, color, shape, frequency, np.array(video_data_snr).astype(float)]
+            row_dataframe = [folder, file_name, pp_number, video, pixel_surface,
+                             color, shape, frequency, np.array(video_data_snr).astype(float)]
 
             # add the row to the dataframe
             df_snr.loc[len(df_snr)] = row_dataframe
-      
+
 # save the dataframe
 df_snr.to_csv(path + "/SNR.csv", index=False)
 
 # create empty dataframe
 # generate the dataframe in the format 'Folder', 'Video'. 'pixel_surface', 'color', 'shape', 'frequency' followed by the SNR data for each pp
-headers_dataframe = ['Folder', 'Video', 'pixel_surface', 'color', 'shape', 'frequency']
+headers_dataframe = ['Folder', 'Video',
+                     'pixel_surface', 'color', 'shape', 'frequency']
 # add the pp numbers to the headers
 pp_number = df_snr['pp'].unique()
 
@@ -142,5 +151,3 @@ df_sorted_by_participant = pd.DataFrame(columns=headers_dataframe)
 df_pp = filter_dataframe_exp(df_sorted_by_participant, df_snr)
 # save the dataframe to a csv file named 'SNR_sorted_by_participant.csv'
 df_pp.to_csv(path + "/SNR_sorted_by_participant.csv", index=False)
-
-

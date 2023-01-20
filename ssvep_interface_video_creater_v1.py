@@ -29,7 +29,6 @@ class SSVEP_Interface():
         # save the current date and time for folder name
         self.date_time = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-
     def calculate_possible_frequencies(self) -> list:
         """ Calculates the number of possible frequencies for the stimuli that are not multiples of each other.
         The frequencies are alos whole number and not decimals as this would allow different methods to evoket the wave (square or sine)
@@ -64,7 +63,6 @@ class SSVEP_Interface():
         print("Possible frequencies after removing multiples: ", frequencies)
         return possible_frequencies
 
-
     def setup_settings(self):
         """ Sets up the settings for the stimuli
         """
@@ -79,7 +77,6 @@ class SSVEP_Interface():
 
         # draw thickness of the shapes
         self.thickness = -1  # -1 to fill circle
-
 
     def create_random_order_of_stimuli_settings_1x1(self) -> list:
         """ Creates a random order of the stimuli settings
@@ -111,7 +108,6 @@ class SSVEP_Interface():
         # shuffle the list of combinations
         np.random.shuffle(indices)
         return indices
-
 
     def create_random_order_of_stimuli_settings_2x2(self) -> list:
         """ Creates a random order of the stimuli settings
@@ -147,7 +143,6 @@ class SSVEP_Interface():
         np.random.shuffle(indices)
         return indices
 
-
     def create_stimuli(self):
         """Creates the stimuli by calculating the coordinates for the stimuli
         """
@@ -159,7 +154,6 @@ class SSVEP_Interface():
         # create a list of tuples with the center coordinates of the 4 quadrants
         self.center_coordinates = [
             (height_1, width_1), (height_1, width_2), (height_2, width_1), (height_2, width_2)]
-
 
     def _draw_circles(self, image: np.ndarray, pixel_surface: int, center_coordinates: list, color_tuples: list) -> np.ndarray:
         """ Draws circles on the image
@@ -181,7 +175,6 @@ class SSVEP_Interface():
             image = cv2.circle(image, center_coordinate,
                                radius, color_tuple, self.thickness)
         return image
-
 
     def _draw_squares(self, image: np.ndarray, pixel_surface: int, center_coordinates: list, color_tuples: list) -> np.ndarray:
         """ Draws squares  on the image
@@ -209,7 +202,6 @@ class SSVEP_Interface():
                                   coordinate_2, color_tuple, self.thickness)
 
         return image
-
 
     def _draw_triangles(self, image: np.ndarray, pixel_surface: int, center_coordinates: list, color_tuples: list) -> np.ndarray:
         """ Draws triangles on the image
@@ -280,7 +272,6 @@ class SSVEP_Interface():
         tmp = 1/2*(1+sin(2*pi*frequency*(frame_number/self.frame_rate)))
         color = int(round(255*tmp))
         return color
-
 
     def create_video_1x1(self):
         """ Creates a video with 1 stimulus on the screen
@@ -405,7 +396,6 @@ class SSVEP_Interface():
                 # save frame as png
                 cv2.imwrite(photo_name_inter_trial, frame)
 
-
     def create_random_order_3_neighbouring_frequencies(self, frequency: float, delta_frequency: float) -> list:
         """ create a list of 3 frequencies with 1 frequency being the same as the frequency argument and the other 2 frequencies being the frequency argument 
         plus or minus delta_frequency. The list is shuffled.
@@ -422,7 +412,6 @@ class SSVEP_Interface():
         # shuffle the list
         np.random.shuffle(frequency_list)
         return frequency_list
-
 
     def update_screen_by_frequency(self, image: np.ndarray, frequency: float, center_coordinate: tuple, color_mode: str, shape: str, pixel_surface: int, frame_number=0) -> np.ndarray:
         """ update the screen by the frequency. The frequency is used to calculate the color of the screen. The color of the screen is used to draw the stimulus on the screen.
@@ -464,7 +453,6 @@ class SSVEP_Interface():
                                          center_coordinate], [color_tuple])
 
         return image
-
 
     def create_video_2x2(self):
         """ create a video with 4 stimuli on the screen

@@ -1,0 +1,4 @@
+,circles,squares,triangles
+circles,X,Not significant,Not significant
+squares,Not significant,X,Significant
+triangles,Not significant,Significant,X
