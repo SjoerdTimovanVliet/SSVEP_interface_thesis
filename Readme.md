@@ -72,15 +72,13 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    ## Step 2: Prepare data for SNR extraction by renaming the processed_data.csv in 
    ![Instruction_data_snr](https://user-images.githubusercontent.com/27996213/213533984-aa621efe-9ee0-4c3c-b5fb-022bc985a41f.png)
 
-   1. Rename the processed_data.csv to processed_data_exp_X_ppX.csv, such as processed_data_exp_1_pp2.csv.  This means experiment 1 participant 2. 
+   1. Rename the processed_data.csv to processed_data_exp_X_ppX.csv, such as processed_data_exp_1_pp2.csv.  This means experiment 1 participant 2.
    2. Place it in the folder within Data_SNR that is either called Experiment_1 or Experiment_2.
-   3. Do this for all the participants for both experiments.
-  
-   See the photo as example.
+   3. Do this for all the participants for both experiments. See the photo as example.
    
     
    ## Step 3: Run process_SNR.py to combine all the data
-   
+   Make sure that the Data_SNR folder is empty except for the folders Experiment_1 and Experiment_2.
    1. On line 46, change the path to the Data_SNR path containg all the '.csv' files.
    2. Run the script with: python process_SNR.py
    
