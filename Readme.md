@@ -88,7 +88,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    
    
    
-   ## Step 4: Create environment for the rest next analyses. 
+   ## Step 4: Create environment for the rest of the analyses. 
    One of the necessary python libraries: pinguoin conflicts with the previous envirnoment and makes the previous script not executable anymore due to dependencies conflicts.
    
     conda create -n  analysis_snr python==3.9.0
