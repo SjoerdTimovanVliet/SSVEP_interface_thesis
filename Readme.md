@@ -86,8 +86,8 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    
    
    
-   ## Step 4: Create environment for the rest of the analyses. 
-   One of the necessary python libraries: pinguoin conflicts with the previous envirnoment and makes the previous script not executable anymore due to dependencies conflicts.
+   ## Step 4: Create environment for the rest of the analyses
+   One of the necessary python libraries: pinguoin conflicts with the previous envirnoment and makes the previous scripts not executable anymore due to dependencies conflicts. Additionally, it uses a different version of matplotlib.
    
     conda create -n  analysis_snr python==3.9.0
   
@@ -100,6 +100,9 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
     conda install -c conda-forge opencv==4.6.0
     
     conda install -c conda-forge pingouin==0.5.2
+    
+    conda install matplotlib
+    
    ## Step 5: Run analyses scripts for the SNR
    The scripts here save everything in the SNR results
    This performs statistical analysis of the SNR and plot some boxplots and means andstandard deviations:
