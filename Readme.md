@@ -44,9 +44,9 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
   Unfortunately the packages used for creating the videos collide with the packages required for the analyses
   Let's create a new environment for these scripts
   
-    conda create -n  analyis python==3.9.0
+    conda create -n  analysis python==3.9.0
   
-    conda activate analyis
+    conda activate analysis
   
     pip install mne==1.2.3
     
@@ -77,9 +77,9 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    
    ### Step 3: Create environment for the rest next analyses. One of the necessary python libraries: pinguoin conflicts with the previous envirnoment and makes the previous script not executable anymore due to dependencies conflicts.
    
-    conda create -n  analyis_snr python==3.9.0
+    conda create -n  analysis_snr python==3.9.0
   
-    conda activate analyis_snr
+    conda activate analysis_snr
   
     pip install mne==1.2.3
     
