@@ -41,7 +41,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
   
   Now you can run ssvep_interface_video_creater_v1.py
   
-  ## Setting up environment for the first analysis script
+  ## Setting up environment for the first 2 analysis scripts
   Unfortunately the packages used for creating the videos collide with the packages required for the following statistical analyses
   Let's create a new environment for the next script
   
@@ -78,7 +78,17 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
   
    See the photo as example.
    
-   ## Step 3: Create environment for the rest next analyses. 
+    
+   ## Step 3: Run process_SNR.py to combine all the data
+   
+   1. On line 48, change the path to the Data_SNR path containg all the '.csv' files.
+   2. Run the script with: python process_SNR.py
+   
+   It outputs a file named SNR_sorted_by_participant.csv located in the Data_SNR folder
+   
+   
+   
+   ## Step 4: Create environment for the rest next analyses. 
    One of the necessary python libraries: pinguoin conflicts with the previous envirnoment and makes the previous script not executable anymore due to dependencies conflicts.
    
     conda create -n  analysis_snr python==3.9.0
@@ -92,15 +102,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
     conda install -c conda-forge opencv==4.6.0
     
     conda install -c conda-forge pingouin==0.5.2
-    
-   ## Step 3: Run process_SNR.py to combine all the data
-   
-   1. On line 48, change the path to the Data_SNR path containg all the '.csv' files.
-   2. Run the script with: python process_SNR.py
-   
-   It outputs a file named SNR_sorted_by_participant.csv located in the Data_SNR folder
-   
-   ## Step 4: Run analyses scripts for the SNR
+   ## Step 5: Run analyses scripts for the SNR
    The scripts here save everything in the SNR results
    This performs statistical analysis of the SNR and plot some boxplots and means andstandard deviations:
    1. In SNR_statistic_analyses_v1.py change line 384 by updating its path.
@@ -115,7 +117,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    
    It creates boxplots and shows the interaction between multiple variables with respect to the SNR
    
-   ## Step 5: Questionnaire analysis
+   ## Step 6: Questionnaire analysis
    1. In analysis_of_questionnaire_v1.py update the path on line 136
    2. Run the script
    
