@@ -19,8 +19,9 @@ To do this the trials can be cut between messages: "Frame to be displayed" to "T
 # The Code explained
 
 Executed on Ubuntu 20.04.4 LTS
+The first 3 steps are optional. These steps create the videos and images used for the trials.
 
-## Step 1: install x264 library to create videos in .avci format
+## Step 1 (OPTIONAL): install x264 library to create videos in .avci format
 
     sudo apt-get update -y
     sudo apt-get apt-get remove -y x264 ffmpeg libx264-dev
@@ -29,7 +30,7 @@ Executed on Ubuntu 20.04.4 LTS
 
 I read this tutorial to find the correct commands: https://www.swiftlane.com/blog/generating-mp4s-using-opencv-python-with-the-avc1-codec/
 
- ## Step 2: Setting up the environment 
+ ## Step 2 (OPTIONAL): Setting up the environment 
  
     conda create -n video_creater python==3.9.0
 
@@ -37,9 +38,10 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
 
     conda install -c conda-forge opencv==4.6.0
   
-  ## Step 3: How the videos and photos of the trials are created 
+  ## Step 3 (Optional): How the videos and photos of the trials are created 
   
   Now you can run ssvep_interface_video_creater_v1.py
+  This outputs all the videos and images of the trials. To display these in Experiment Builder it was converted to a framrate of 59.98fps using the software named Handbrake.
   
   ## Step 4: Setting up environment for the first 2 analysis scripts
   Unfortunately the packages used for creating the videos collide with the packages required for the following statistical analyses
