@@ -1,6 +1,7 @@
 # Introduction
 This research investigates how stimuli characteristics in SSVEP-based interfaces influence the signal-to-noise ratio (SNR) (dB). It used Experiment Builder to record the eye-tracking and eeg data. 2 Experiments are executed. Experiment 1 shows one stimulus across all the trials. This stimulus varies in shape, frequency, color, and size. Experiment 2 simulates the same stimulus in an 2X2 SSVEP-speller across the same frequencies, colors, and sizes. A comparison can be made between the two experiments to investigate the effect a SSVEP-speller environment has on the measured SNR.
 
+One important aspect when executing this code is that there were a lot of conflicts between dependencies. This caused a lot of seperate anaconda environments.
 # Experiments - Experimental Builder
 The experiments itself are located in the Experimental Builder folder. The version of the application is v2.3.38.
 
@@ -42,7 +43,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
   
   ## Setting up environment for the first analysis script
   Unfortunately the packages used for creating the videos collide with the packages required for the following statistical analyses
-  Let's create a new environment for these scripts
+  Let's create a new environment for the next script
   
     conda create -n  analysis python==3.9.0
   
