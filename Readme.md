@@ -106,14 +106,14 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    ## Step 5: Run analyses scripts for the SNR
    The scripts here save everything in the SNR results
    This performs statistical analysis of the SNR and plot some boxplots and means andstandard deviations:
-   1. In SNR_statistic_analyses_v1.py change line 384 by updating its path.
+   1. In SNR_statistic_analyses_v1.py change line 384 by updating its path to the file: SNR_sorted_by_participant.csv.
    2. Run the file with python.
    
    It outputs the p values of the analyses and creates figures and boxplots.
-   
+    
    
    This creates extensive visualizations of the data:
-   1. In SNR_statistic_4d_plot_v1.py change line 940 by updating its path.
+   1. In SNR_statistic_4d_plot_v1.py change line 940 by updating its path to the file: SNR_sorted_by_participant.csv.
    2. Run the python file
    
    It creates boxplots and shows the interaction between multiple variables with respect to the SNR
@@ -122,7 +122,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    1. In analysis_of_questionnaire_v1.py update the path on line 136
    2. Run the script
    
-   Outputs results_logger.csv in the same folder. This shows if the differences between the means were significant.
+   Outputs results_logger_questionnaire.csv in the same folder. This shows if the differences between the means were significant.
     
   
   
