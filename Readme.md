@@ -40,7 +40,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
   
   Now you can run ssvep_interface_video_creater_v1.py
   
-  ## Setting up environment for the first analyses scripts
+  ## Setting up environment for the first analysis script
   Unfortunately the packages used for creating the videos collide with the packages required for the following statistical analyses
   Let's create a new environment for these scripts
   
