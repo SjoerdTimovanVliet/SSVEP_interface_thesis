@@ -61,7 +61,7 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    This has to be executed for each experiment for each participant seperately.
    ![instruction_2](https://user-images.githubusercontent.com/27996213/213590999-fce106d1-fe70-4bf0-97df-f9254cb803c3.png)
 
-   1. In line 1216 the variable folder_path has to be changed to the path containing the eye-tracking and EEG data in combination with the EXPERIMENT_X.csv. The X is here either 1 or 2.  An example of the folder structure can be seen in the picture above. Example for line 1216 is: path = /media/sjoerd/BackUp Drive/Thesis_project/participant data/raw data/pp1/Experiment 1
+   1. In line 1216 the variable folder_path has to be changed to the path containing the eye-tracking and EEG data in combination with the EXPERIMENT_X.csv. The X is here either 1 or 2.  An example of the folder structure can be seen in the picture above. The highlight folder/files are generated. The other files need to be present in a folder to generate these folders/files. Example for line 1216 is: path = /media/sjoerd/BackUp Drive/Thesis_project/participant data/raw data/pp1/Experiment 1
    Important: There is a difference between Linux and Windows in path which means one uses '/' and the other '\'. Thus, you might need to change that to get the code running in places where paths are seperated and are created.
    
    2. Then run the file with python
