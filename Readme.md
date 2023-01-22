@@ -129,5 +129,9 @@ I read this tutorial to find the correct commands: https://www.swiftlane.com/blo
    
    Outputs results_logger_questionnaire.csv in the same folder. This shows if the differences between the means were significant.
     
+    
+    # Citation
+    To citate this work please use the following reference:
+    van Vliet, S.T. (2023), Influential stimuli characteristics on SNR in SSVEP-based interfaces, Robotics, TU Delft
   
   
