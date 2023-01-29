@@ -334,11 +334,8 @@ def process_eeg_trial_data(trial_index: int, df_txt: pd.DataFrame, all_events: n
 
     # get the sampling frequency
     sfreq = epochs.info['sfreq']
-    # calculate teh EpochsSpectrum output using the welch method to calculate the psd across the entire epochs. Zero overlap between segments.
-    spectrum = epochs.compute_psd('welch', n_fft=int(sfreq * (tmax - tmin)), n_overlap=0,
-                                  n_per_seg=None, tmin=tmin, tmax=tmax, fmin=fmin, fmax=fmax, window='boxcar', verbose=False)
 
-    # calculate teh power spectrum density (psd) spectrum
+    # calculate the power spectrum density (psd) spectrum
     spectrum = epochs.compute_psd(
         'welch',
         n_fft=int(sfreq * (tmax - tmin)),
