@@ -16,7 +16,7 @@ To do this the trials can be cut between messages: "Frame to be displayed" to "T
 
 
 # TTL pulses
-The TTL messages.xlsx is added to give the EEG recordings context. It contains an overview of all the TTL pulses used in the experiments and can be seen in the EEG recordings..
+The TTL messages.xlsx is added to give the EEG recordings context. It contains an overview of all the TTL pulses used in the experiments and can be seen in the EEG recordings: https://github.com/SjoerdTimovanVliet/SSVEP_interface_thesis/blob/039573f50cc564c0cef59fb574be527e83c4dd2f/TTL%20Messages.xlsx
 
 
 # The Code explained
