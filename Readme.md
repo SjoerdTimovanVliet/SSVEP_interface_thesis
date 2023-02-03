@@ -1,5 +1,6 @@
 # Introduction
 This research investigates how stimuli characteristics in SSVEP-based interfaces influence the signal-to-noise ratio (SNR) (dB). It used Experiment Builder to record the eye-tracking and eeg data. 2 Experiments are executed. Experiment 1 shows one stimulus across all the trials. This stimulus varies in shape, frequency, color, and size. Experiment 2 simulates the same stimulus in an 2X2 SSVEP-speller across the same frequencies, colors, and sizes. A comparison can be made between the two experiments to investigate the effect a SSVEP-speller environment has on the measured SNR.
+The report is added as a pdf file: https://github.com/SjoerdTimovanVliet/SSVEP_interface_thesis/blob/3e43cfc5b27940264fdd1dc950371689181f8e58/SSVEP__Thesis__2023.pdf 
 
 One important aspect when executing this code is that there were a lot of conflicts between dependencies. This caused a lot of seperate anaconda environments.
 # Experiments - Experimental Builder
@@ -14,11 +15,16 @@ The .edf files can be modified with Data Viewer which can cut the trials.
 To do this the trials can be cut between messages: "Frame to be displayed" to "TIMEOUT_TRIAL_1X1" or "TIMEOUT_TRIAL_2X2" meaning for EXPERIMENT_1X1 and "EXPERIMENT_2X2". After that the data can be converted to a sample report. In this research all the variables possible are saved in the output '.csv' files.
 
 
+# TTL pulses
+The TTL messages.xlsx is added to give the EEG recordings context. It contains an overview of all the TTL pulses used in the experiments and can be seen in the EEG recordings..
 
 
 # The Code explained
 
 Executed on Ubuntu 20.04.4 LTS
+If the requirements.txt files do not work to recreate the conda environment, you could use Step 2, Step 4,  and Step 8 to recreate the environments. 
+
+
 The first 3 steps are optional. These steps create the videos and images used for the trials.
 
 ## Step 1 (OPTIONAL): install x264 library to create videos in .avci format
