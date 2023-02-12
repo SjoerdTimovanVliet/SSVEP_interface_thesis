@@ -3,6 +3,10 @@ This research investigates how stimuli characteristics in SSVEP-based interfaces
 The report is added as a pdf file: https://github.com/SjoerdTimovanVliet/SSVEP_interface_thesis/blob/main/SSVEP__Thesis__2023-rotated.pdf 
 
 One important aspect when executing this code is that there were a lot of conflicts between dependencies. This caused a lot of seperate anaconda environments.
+# Dataset
+The dataset still has to be published in collaboration with the TU Delft
+
+
 # Experiments - Experimental Builder
 The experiments itself are located in the Experimental Builder folder. The version of the application is v2.3.38.
 
