@@ -64,7 +64,7 @@ def create_boxplot(row: np.ndarray, path_to_save: str, data_per_participant_dict
 
             # extract the participant number
             # pp5 turns into pp1, etc.
-            participant_number = int(participant.split('pp')[1]) - 4
+            participant_number = int(participant.split('pp')[1])
 
             # show the lines of the mean of each participant in the boxplot within each box with an alpha of 0.5 at the correct position with respect to the x axis
             ax.plot([i-0.5 + j*stepsize, i - 0.4 + j*stepsize],
