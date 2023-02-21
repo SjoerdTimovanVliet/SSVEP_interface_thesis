@@ -1,6 +1,6 @@
 # Introduction
 This research investigates how stimuli characteristics in SSVEP-based interfaces influence the signal-to-noise ratio (SNR) (dB). It used Experiment Builder to record the eye-tracking and eeg data. 2 Experiments are executed. Experiment 1 shows one stimulus across all the trials. This stimulus varies in shape, frequency, color, and size. Experiment 2 simulates the same stimulus in an 2X2 SSVEP-speller across the same frequencies, colors, and sizes. A comparison can be made between the two experiments to investigate the effect a SSVEP-speller environment has on the measured SNR.
-The report is added as a pdf file: https://github.com/SjoerdTimovanVliet/SSVEP_interface_thesis/blob/main/SSVEP__Thesis__2023-rotated.pdf 
+
 
 One important aspect when executing this code is that there were a lot of conflicts between dependencies. This caused a lot of seperate anaconda environments.
 # Dataset
